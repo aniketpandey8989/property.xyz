@@ -1,76 +1,46 @@
 import type { NextPage } from "next";
+import Feedback from "../components/feedback/Feedback";
+import Propertysearch from "../components/propertySearch/Propertysearch";
+import Footer from "../components/footer/Footer";
+import { Image } from "react-bootstrap";
 import React from "react";
 const Home: NextPage = () => {
   return (
     <div className="container-fluid">
-      <div className="row bg-white">
-        <div className="col-lg-12 ">
-          <div className="beta-heading  my-1 ">
-            <span className="beta ">BETA</span>
-            This is new service, please leave your feadback
-          </div>
-        </div>
-      </div>
+      <Feedback />
+
       <div className="row">
         <div className="bg-color ">
           <div className="col-lg-12 ">
             <div className="text-style mt-5 mb-5">
-              <h2>
+              <h2 className="heading-style">
                 Check your free instant your property valuation in less then 30
                 seconds
               </h2>
-              <p>
+              <p className="paragraph-style">
                 Whether you are looking to buy a property,sell your property or
                 considering getting a mortage. a quick check on your property
                 value can help you see what is possible
               </p>
             </div>
           </div>
-          <div className="flex-style py-4">
-            <div>
-              Property postcode
-              <div className="form-group mt-2 ">
-                {/* <input type="email" className="form-control  border-hide" placeholder="e.g CH5 387 "> */}
-              </div>
-            </div>
-            <div>
-              Property type
-              <select
-                className="form-select mt-2   border-hide"
-                aria-label="Default select example"
-              >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div>
-              No. of beds
-              <select
-                className="form-select mt-2  border-hide"
-                aria-label="Default select example"
-              >
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div className="btn-center">
-              <button type="button" className="btn btn-danger search-btn">
-                Search
-              </button>
-            </div>
-          </div>
-          <div className="powered my-4">
+
+          <Propertysearch />
+          <div className="powered mt-4">
             <span>Powered By</span>
-            {/* <img src="image/swrib.png" className="swrib-img ml-5" alt="Responsive image"> */}
+            <Image
+              src="https://i.postimg.cc/5yFSMz35/swrib.png"
+              className="swrib-img "
+            />
           </div>
-          <div className="img-center my-5">
-            {/* <img src="image/img.png" className="img-fluid" alt="Responsive image"> */}
+          <div className="img-center mt-5">
+            <Image
+              src="https://i.postimg.cc/9MwLcsXq/img.png"
+              className="img-fluid"
+            />
           </div>
-          <div className="bg-blue py-4">
+          <Footer />
+          {/* <div className="bg-blue py-4">
             <div className="property">
               <h5>Property xyz</h5>
               <p className="property-style">Property investors sign up</p>
@@ -96,7 +66,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

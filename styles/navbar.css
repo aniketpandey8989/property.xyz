@@ -1,14 +1,29 @@
-.bg-navbar{
-    background-color: #2C3142;
-    color: #fff;
-
+.bg-navbar {
+  background-color: #2c3142;
+  color: #ffffff;
 }
-.search-relative{
-    position: relative;
-  }
-  .search-Icon {
-    position: absolute;
-    top: 12px;
-    right: 10%;
-    opacity: 0.6;
-  }
+.search-relative {
+  position: relative;
+}
+.search-Icon {
+  position: absolute;
+  top: 12px;
+  right: 10%;
+  opacity: 0.6;
+}
+.nav-section {
+    width: 70%;
+  margin: 0 auto;
+}
+.search-section {
+  display: flex !important;
+  justify-content: end;
+}
+.bg-search {
+  background-color: #363d52;
+  border: none;
+  width: 472px;
+}
+a#navbarScrollingDropdown {
+  color: #ffffff;
+}
