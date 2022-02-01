@@ -1,0 +1,14 @@
+.bg-navbar{
+    background-color: #2C3142;
+    color: #fff;
+
+}
+.search-relative{
+    position: relative;
+  }
+  .search-Icon {
+    position: absolute;
+    top: 12px;
+    right: 10%;
+    opacity: 0.6;
+  }
