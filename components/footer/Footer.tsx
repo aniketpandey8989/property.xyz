@@ -1,6 +1,4 @@
-// import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faLinkedin,
@@ -11,13 +9,19 @@ export default function Footer() {
     <div>
       <div className="bg-blue py-4">
         <div className="property">
-          <h5>Property xyz</h5>
+          <h5>Property.xyz</h5>
           <p className="property-style hide-text">Property investors sign up</p>
           <p className="property-style hide-text">Sell your property </p>
           <p className="property-style">About</p>
           <p className="property-style">Contact us</p>
           <p className="property-style">Feedback</p>
+          <div className="d-flex hide-icon ">
+              <FontAwesomeIcon className="facebook " icon={faFacebook} />
+              <FontAwesomeIcon className="facebook " icon={faLinkedin} />
+              <FontAwesomeIcon className="facebook " icon={faYoutube} />
+            </div>
         </div>
+       
       </div>
       <div className="bg-grey">
         <div className="property  py-4">
@@ -30,7 +34,7 @@ export default function Footer() {
               <p className="footer-text">Data Sources</p>
             </div>
             <div className="d-flex social-icon">
-              <p className="footer-text">Property investors sign up</p>
+              <p className="footer-text hide-text">Follow us on social media</p>
               <FontAwesomeIcon className="facebook " icon={faFacebook} />
               <FontAwesomeIcon className="facebook " icon={faLinkedin} />
               <FontAwesomeIcon className="facebook " icon={faYoutube} />

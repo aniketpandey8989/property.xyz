@@ -8,17 +8,15 @@ import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
   const { query } = useRouter();
-  console.log(query,"query")
   return (
     <div className="container-fluid">
       <Feedback />
-
       <div className="row">
         <div className="bg-color ">
           <div className="col-lg-12 ">
             <div className="text-style mt-5 mb-5">
               <h2 className="heading-style">
-                Check your free instant your property valuation in less then 30
+                Check your free instant property valuation in less than 30
                 seconds
               </h2>
               <p className="paragraph-style">
@@ -44,33 +42,6 @@ const Home: NextPage = () => {
             />
           </div>
           <Footer />
-          {/* <div className="bg-blue py-4">
-            <div className="property">
-              <h5>Property xyz</h5>
-              <p className="property-style">Property investors sign up</p>
-              <p className="property-style">Sell your property </p>
-              <p className="property-style">About</p>
-              <p className="property-style">Contact us</p>
-              <p className="property-style">Feedback</p>
-            </div>
-          </div>
-          <div className="bg-grey py-4">
-            <div className="property">
-              <h5>Property xyz</h5>
-              <div className="footer-flex">
-                <div className="d-flexstyle">
-                  <p className="property-style">Sitemap</p>
-                  <p className="property-style">Privacy policy </p>
-                  <p className="property-style">Terms of use</p>
-                  <p className="property-style"> Cookie Policy</p>
-                  <p className="property-style">Data Sources</p>
-                </div>
-                <div className="d-flex">
-                  <p className="property-style">Property investors sign up</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

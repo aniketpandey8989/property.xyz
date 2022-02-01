@@ -1,12 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 import {
-  Button,
   Container,
   Form,
-  Image,
   FormControl,
   Nav,
   Navbar,
@@ -17,10 +14,7 @@ export default function Header() {
     <div>
       <Navbar className="bg-navbar" expand="lg">
         <Container fluid className="nav-section"> 
-          {/* <Navbar.Brand href="#">Webiwork</Navbar.Brand> */}
-          {/* <Image src="/images/logo.jpeg" className="logo" /> */}
-          <FontAwesomeIcon className="" icon={faHome} />
-          <h5>Property.xtz</h5>
+          <h5>property.xyz</h5>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" className="search-section">
             <Nav className=" my-2 my-lg-0" navbarScroll>
