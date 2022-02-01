@@ -4,7 +4,11 @@ import Propertysearch from "../components/propertySearch/Propertysearch";
 import Footer from "../components/footer/Footer";
 import { Image } from "react-bootstrap";
 import React from "react";
+import { useRouter } from "next/router";
+
 const Home: NextPage = () => {
+  const { query } = useRouter();
+  console.log(query,"query")
   return (
     <div className="container-fluid">
       <Feedback />
