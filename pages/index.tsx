@@ -1,6 +1,10 @@
 import type { NextPage } from "next";
 import React from "react";
+import { useRouter } from "next/router";
+
 const Home: NextPage = () => {
+  const { query } = useRouter();
+  console.log(query,"query")
   return (
     <div className="container-fluid">
       <div className="row bg-white">
